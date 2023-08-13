@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn2Code\Login </title>
+    <link rel="shortcut icon" type="image/jpg" href="images\favicon.ico">
+    <style>
+        #bgvideo
+         { position: absolute;
+  right: 0;
+  bottom: 0;
+  width:1250px;
+}
+
+#middlediv {
+  background: linear-gradient(to top, #00ffff 4%, #0066ff 100%);
+position:fixed;
+margin-top: 60px;
+margin-bottom: 10px;
+margin-left:420px ;
+margin-right:100px ;
+width:460px;
+height:420px;
+border-radius: 15px;
+padding:7px;
+}
+
+#pass,#eml,#txteml,#txtpass,#sign {
+width:250px;
+margin-left:5px;
+padding:6px;
+border-radius:5px;
+}
+
+input [type=text]:focus
+{
+  border:2px solid rgb(10, 95, 134);
+  background-color: rgb(176, 174, 173);
+}
+input[type=submit]{
+    width:60%;
+    margin-left:85px;
+    padding:7px;
+    border:none;
+    background-color:#7311d5;
+border-radius:15px;
+font-size:20px;
+font-family:Georgia;
+font-style:bold;
+color:white;
+}
+
+input[type=submit]:hover
+{
+  background-color:#5f15a9;
+}
+
+   </style>
+   </head>
+   <body>
+    <video autoplay muted loop id="bgvideo">
+        <source src="coding.mp4" type="video/mp4">
+      </video>
+   <div id="middlediv">
+<div id="logodiv" style="background-color:white;border-radius:15px;" ><a href="home.html">
+    <img src="logo2.1.png" alt="Learn2Code" width="370px" height="100px" />
+  </a></div>
+ <a href="login.html" style="color:black;"><u><h2 style="text-align:center;font-size:25px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Log in</h2></u> </a>
+  <form method="post">
+  <label id="eml">Email Or Username</label><br>
+<input type="text" style="border:2px solid rgb(10, 95, 134);background-color: #dae3e0;" id="txteml" size="40" placeholder="Enter your Email or Username" required autofocus autocomplete="on"><br><br>
+  <label id="pass" >Password</label><br>
+<input type="text"  size="15" style="border:2px solid rgb(10, 95, 134);background-color: #d6dfdb;" id="txtpass" placeholder="Enter your Password"  required><br><br>
+<script>  
+function loginmsg()
+{  var a;
+  a=alert("You have login successfully");
+}
+</script>
+<input class="text2" id="btnsub" type="submit" onclick="loginmsg()" value="Log in">
+<h3 >Don't have an account? <a href="sign_in.html" style="color:blue;"> Sign up</a></h3>
+
+
+</form>
+   </div>
+</body>
+</html>
