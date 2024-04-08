@@ -1,0 +1,269 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: #ccebeb;
+    font-family: Georgia;
+    width:100%;
+}
+
+#firstdiv 
+{
+    background-color: white;
+    display:grid;  
+    grid-template-columns: 4fr 3fr;
+}
+
+#mainlogo{
+    width: 40%;
+    height:100%;
+}
+
+.threeButtons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    font-family: Georgia;
+    margin:10px;
+    border: none;
+    border-radius:50px;
+    text-decoration:none;
+    padding: 12px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.btn a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#topbutton0 
+{
+    background-color:  #FCC904;
+}
+
+#topbutton0:hover 
+{
+    background-color: #deae02 ;
+}
+
+#topbutton1 
+{
+    background-color: #7311d5;
+}
+
+#topbutton1:hover 
+{
+    background-color: #400693;
+}
+
+#topbutton2 
+{
+    background-color: #1156eb;
+}
+
+#topbutton2:hover 
+{
+    background-color: #072d80;
+}
+
+#seconddiv
+{
+    display:grid;
+    grid-template-columns: 6fr 3fr;
+    background: linear-gradient(to bottom, #00ffff 0%, #6600ff 100%);
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    width:100%;
+}
+
+.girl-img img
+{
+    width:80%;
+    height:auto;
+}
+
+.headings
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:100px;
+}
+
+.headings h1
+{
+    font-size:3.3rem;
+    padding:10px;
+}
+
+.headings h3
+{
+    font-size:22px;
+    padding:10px;
+}
+
+#startlearningnow {
+    background-color: #ffce51 ;
+    margin-left:2px;
+}
+
+#startlearningnow:hover
+{
+    background-color: #ffe186 ;
+}
+
+#thirddiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:24px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#thirddiv p, #thirddiv h3
+{
+    padding:10px;
+}
+
+#thirddiv h3
+{
+    font-size:30px;
+}
+
+#thirddiv p
+{
+    font-size:20px;
+}
+
+#fourthdiv h3
+{
+    font-size:30px;
+    text-align: center;
+    color:white;
+    background: linear-gradient(to bottom, #33055a 0%, #190970 100%);
+    padding: 6px;
+}
+
+.boxes
+{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:30px 30px;
+    width:300px;
+    height:300px;
+    border: 1px solid grey;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box p
+{
+    text-align: center;
+}
+
+.box img
+{
+    width:150px;
+    height:200px;
+    align-self: center;
+    justify-self: center;
+}
+
+.box button
+{
+    font-family: Georgia;
+    margin:10px;
+    border: none;
+    border-radius:10px;
+    text-decoration:none;
+    padding: 7px;
+    font-size: 17px;
+    background-color: rgb(9, 89, 174);
+    color:white;
+    cursor:pointer;
+}
+
+.box button:hover
+{
+    color:rgb(224, 237, 245);
+}
+
+#bottomfooterdiv {
+    background-color: #055d4b;
+    padding: 30px;
+    color: #bfc7c9;
+    text-align: center;
+  }
+
+#bottomfooterdiv  p:nth-child(2)
+{
+font-weight: bold;
+padding:20px;
+}
+
+#bottomfooterdiv  a
+{
+color: #bfc7c9;
+text-decoration:none;
+}
+
+#bottomfooterdiv  a:hover 
+{
+text-decoration:underline;
+color: aliceblue;
+}
+
+@media only screen  and (max-width:685px){
+    #firstdiv 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #seconddiv
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .headings
+    {
+        margin-left: 10px;
+    }
+
+    #mainlogo
+    {
+        width: 100%;
+    }
+
+    .btn
+    {
+        padding:7px;
+        font-size:16px;
+    }
+}

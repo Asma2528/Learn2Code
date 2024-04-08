@@ -1,0 +1,52 @@
+#middlediv
+{
+  margin-top:2%;
+  height:90%;
+}
+
+h2
+{
+  font-size: 26px;
+  padding:2px 0px;
+}
+
+h3
+{
+  font-size: 20px;
+  text-align: center;
+}
+
+p
+{
+  font-size: 16px;
+} 
+
+label,input
+{
+    margin:1px 0px;
+}
+
+p a
+{
+    color:black;
+}
+
+@media only screen and (max-width:660px) {
+  #middlediv
+  {
+      width:90%;
+      height:100%;
+      margin-top:1%;
+  }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:120px)
+{
+  #middlediv
+  {
+      width:60%;
+      height:100%;
+      margin-top:1%;
+  }
+}
